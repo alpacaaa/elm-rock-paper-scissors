@@ -132,7 +132,7 @@ intToChoice n =
             Spock
 
         _ ->
-            intToChoice <| n - (n - 5)
+            intToChoice <| (rem n 5) + 1
 
 
 updateScore : Score -> GameResult -> Score
